@@ -1,0 +1,506 @@
+[
+  {
+    "id": "en-context",
+    "locale": "en",
+    "task": "首页热量余量标签",
+    "input": "Today’s room",
+    "reference": "Calories left today",
+    "criterion": "表达每日剩余热量；不把 room 字面译为房间。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "en-uncertainty",
+    "locale": "en",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "en-ui",
+    "locale": "en",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "动态日期、数字、单位和价格使用平台 formatter；静态跨地区说明优先写明月份，避免 09/08 的歧义。plural 常见 one/other；0 不能按 1 处理。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "zh-Hans-context",
+    "locale": "zh-Hans",
+    "task": "保存按钮及对应状态",
+    "input": "进行记录的保存操作",
+    "reference": "保存记录",
+    "criterion": "按钮说动作；完成状态另外写“已保存”，不可混用。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "zh-Hans-uncertainty",
+    "locale": "zh-Hans",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "zh-Hans-ui",
+    "locale": "zh-Hans",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "中文正文使用中文标点；英数间距按项目风格统一，不为排版在资源里堆空格。数量一般不发生英语式单复数，但仍保留显式 =0、否定和量词的意义。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "zh-Hant-context",
+    "locale": "zh-Hant",
+    "task": "设置入口及连接错误",
+    "input": "設置／互聯網連接失敗",
+    "reference": "設定／無法連上網路",
+    "criterion": "台湾界面用词样例；不可自动推广为香港地区标准。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "zh-Hant-uncertainty",
+    "locale": "zh-Hant",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "zh-Hant-ui",
+    "locale": "zh-Hant",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "正文常用「」引号与全形标点；冒号、英数空格服从项目一致性。没有英语式复数变化也不能删除 ICU 必需分支或 =0 业务含义。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "ja-context",
+    "locale": "ja",
+    "task": "查看历史记录的按钮",
+    "input": "あなたの履歴を見ることができます",
+    "reference": "履歴を見る",
+    "criterion": "动作不需要完整解释句；正文若说明能力可保留できます。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "ja-uncertainty",
+    "locale": "ja",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "ja-ui",
+    "locale": "ja",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "核对英数全半角、品牌间距、禁则换行和量词（回、件、日）；正文句号与短标签分别处理。plural 为 other，仍保留精确数量分支。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "ko-context",
+    "locale": "ko",
+    "task": "保存完成的状态提示",
+    "input": "저장이 되어졌습니다",
+    "reference": "저장되었습니다",
+    "criterion": "修正双重被动；不改变已完成状态。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "ko-uncertainty",
+    "locale": "ko",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "ko-ui",
+    "locale": "ko",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "核对韩文断词、计数单位、日期和带拉丁品牌的助词；无英语式复数不等于任何数量都可删。屏幕状态和完整错误句分别审校。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "es-context",
+    "locale": "es",
+    "task": "导航主页",
+    "input": "Hogar",
+    "reference": "Inicio",
+    "criterion": "软件导航而非家居／住宅场景。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "es-uncertainty",
+    "locale": "es",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "es-ui",
+    "locale": "es",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "数字／日期通过选定地区 formatter；plural 不只凭英语复制：CLDR 包含 one/many/other，百万类按实际引擎。金额不因语言改币种。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "fr-context",
+    "locale": "fr",
+    "task": "保存按钮",
+    "input": "Sauvez vos modifications maintenant",
+    "reference": "Enregistrer",
+    "criterion": "按钮只负责保存时的精简样例；不是禁止完整指令或vous。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "fr-uncertainty",
+    "locale": "fr",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "fr-ui",
+    "locale": "fr",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "法国语境核对冒号、分号、问号、感叹号和« »附近的不可断空格，具体空格宽度遵循平台／项目。数字用 formatter。0/1与百万类别需依CLDR；不能硬写 n==1。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "de-context",
+    "locale": "de",
+    "task": "保存记录按钮",
+    "input": "Die Speicherung des Eintrags durchführen",
+    "reference": "Eintrag speichern",
+    "criterion": "用明确动词动作，保留保存对象。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "de-uncertainty",
+    "locale": "de",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "de-ui",
+    "locale": "de",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "德国常见数字1.234,56，静态日期须分清日月；真实值由 formatter 处理。检查1与其他数量、长单词窄屏换行。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "pt-BR-context",
+    "locale": "pt-BR",
+    "task": "下载软件库的按钮",
+    "input": "Baixar e instalar essa livraria Python",
+    "reference": "Baixar essa biblioteca Python",
+    "criterion": "修正领域词并移除源文没有的安装动作。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "pt-BR-uncertainty",
+    "locale": "pt-BR",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "pt-BR-ui",
+    "locale": "pt-BR",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "巴西地区数字／日期／货币用formatter；pt-BR的0及小数可能走one，不能套用pt-PT或英语规则。复数按运行时CLDR，含百万many类别。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "it-context",
+    "locale": "it",
+    "task": "保存按钮",
+    "input": "Effettuare il salvataggio",
+    "reference": "Salva",
+    "criterion": "按钮用当地简短动作；正文和标题不必套相同形态。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "it-uncertainty",
+    "locale": "it",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "it-ui",
+    "locale": "it",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "地区数字、日期、单位用formatter；数量分支检查one/many/other及性数配合。按钮和Caricamento in corso一类进行状态不可混用。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "ru-context",
+    "locale": "ru",
+    "task": "记录数量（示意完整数量短语）",
+    "input": "1 записей / 2 записей / 5 записи",
+    "reference": "1 запись / 2 записи / 5 записей",
+    "criterion": "检查数量变化；放入句子后还须检查格，不能把本例当通用片段。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "ru-uncertainty",
+    "locale": "ru",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "ru-ui",
+    "locale": "ru",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "测试0、1、2、5、11、21、22、25及小数。CLDR cardinal one/few/many/other，小数常走other；数字、日期、单位用formatter。",
+    "review_status": "runtime-and-language-review-required"
+  },
+  {
+    "id": "ar-context",
+    "locale": "ar",
+    "task": "保存按钮",
+    "input": "القيام بعملية الحفظ",
+    "reference": "حفظ",
+    "criterion": "动词名词式短标签即可；不引入特定方言。",
+    "review_status": "agent-authored-reference-not-native-reviewed"
+  },
+  {
+    "id": "ar-uncertainty",
+    "locale": "ar",
+    "task": "把以下含义用于AI热量结果解释，保留不确定性和非医疗边界",
+    "input": "This is an estimate and may be inaccurate. It is not medical advice.",
+    "criterion": "目标地区自然；估算、可能不准确、非医疗建议三个事实均保留；不得承诺准确性或疗效；不按固定词串评分。",
+    "review_status": "semantic-criteria-only"
+  },
+  {
+    "id": "ar-ui",
+    "locale": "ar",
+    "task": "审校该地区的窄屏数量与日期提示",
+    "input": {
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11,
+        21,
+        22,
+        100,
+        1.5,
+        1000000
+      ],
+      "date": "2026-09-08",
+      "brand": "ExampleApp",
+      "surface": "数量标签与旁边的独立日期"
+    },
+    "criterion": "验证zero/one/two/few/many/other，至少0、1、2、3、11、100及小数。数字字形和历法使用实际地区设置；ar不能硬映射ar-SA。检查括号、负号、单位、方向性图标。",
+    "review_status": "runtime-and-language-review-required"
+  }
+]

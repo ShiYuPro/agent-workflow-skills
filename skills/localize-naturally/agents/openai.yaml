@@ -1,0 +1,4 @@
+interface:
+  display_name: "自然本地化"
+  short_description: "让多语言文案自然准确、贴合品牌语气并适配真实产品界面布局"
+  default_prompt: "Use $localize-naturally to localize this user-facing copy naturally, preserve meaning and brand tone, and verify terminology and layout fit."

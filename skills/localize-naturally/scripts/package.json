@@ -1,0 +1,8 @@
+{
+  "name": "localize-naturally-checks",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@formatjs/icu-messageformat-parser": "3.5.17"
+  }
+}
