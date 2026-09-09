@@ -1,5 +1,18 @@
 # Agent Workflow Skills
 
+**Each skill now has its own repository.** Use the standalone repositories below
+for installation, issues and updates. This collection remains available for existing
+links; the independent repositories are the maintained homes.
+
+| Skill | Standalone repository |
+| --- | --- |
+| Project Artifact Cleanup | [ShiYuPro/project-artifact-cleanup](https://github.com/ShiYuPro/project-artifact-cleanup) |
+| Localize Naturally | [ShiYuPro/localize-naturally](https://github.com/ShiYuPro/localize-naturally) |
+| Evidence-Bound Execution | [ShiYuPro/evidence-bound-execution](https://github.com/ShiYuPro/evidence-bound-execution) |
+| Multimodel Chinese Copywriting | [ShiYuPro/multimodel-chinese-copywriting](https://github.com/ShiYuPro/multimodel-chinese-copywriting) |
+| Fast Deployment Execution | [ShiYuPro/fast-deployment-execution](https://github.com/ShiYuPro/fast-deployment-execution) |
+
+
 Practical skills for the work AI agents tend to leave unfinished: cleaning their
 own scratch files, preserving localization structure, following corrections,
 verifying copy, and closing out a release.
